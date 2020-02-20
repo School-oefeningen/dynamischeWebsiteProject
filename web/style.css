@@ -1,0 +1,236 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap');
+@-webkit-keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* FORMULIER */
+form {
+    max-width: 450px;
+    margin: auto;
+}
+form>p>label{
+    text-align: left;
+    display: block;
+}
+form>p>input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+input[type=submit] {
+    color: white;
+    background-color: #1db954;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+/* TABEL */
+table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+table th:first-of-type {
+    border-top-left-radius: 15px;
+    width: 55%;
+}
+table th:nth-of-type(3) {
+    border-top-right-radius: 15px;
+    width: 15%;
+}
+table>thead>tr:first-of-type {
+    background-color: #6c7ae0;
+}
+table tr:nth-of-type(even) {
+    background-color: #fff;
+}
+table tr:nth-of-type(odd) {
+    background-color: #f8f6ff;
+}
+table td, th {
+    padding: 18px;
+}
+table th {
+    color: #fff;
+}
+
+/* ALGEMEEN */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(-45deg, rgb(61, 165, 65), rgb(235, 22, 104), #23A6D5, rgb(232, 255, 21));
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 5s ease infinite;
+    animation: Gradient 5s ease infinite;
+    position: relative;
+}
+ul {
+    list-style: none;
+}
+
+/* NAVIGATIE */
+nav {
+    margin-bottom: 70px;
+    background-color: gainsboro;
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+nav a {
+    display: block;
+    padding: 15px 35px;
+    text-decoration: none;
+    color: #000;
+}
+nav a:hover {
+    background-color: #6c7ae0;;
+    color: #fff;
+    transition: 0.2s ease;
+}
+
+/* MAIN */
+main {
+    max-width: 65vw;
+    margin: auto;
+    padding: 0 40px 10px 40px;
+    border-radius: 20px;
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.5);
+    background-color: gainsboro;
+}
+main>h1 {
+    padding: 40px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+/* KNOPPEN */
+#knoppen {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 20px 0;
+}
+a {
+    display:inline-block;
+    padding:0.50em 1.2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:300;
+    color:#000;
+    text-align:center;
+    transition: 0.2s ease-in-out;
+}
+a:hover {
+    color:#FFF;
+    background-color: #6c7ae0;
+    transition: 0.2s ease-in-out;
+}
+#knoppen a { 
+    border:0.1em solid #000;
+    border-radius:0.2em;
+    margin: 0 10px;
+}
+.voeg_toe {
+    background-color: #1db954;
+    color: #fff;
+}
+.voeg_toe:hover {
+    background-color: #1d9748;
+}
+
+/* FOOTER */
+footer {
+    position: absolute;
+    right: 0;
+    font-size: 0.8rem;
+    margin: 70px 10px 7px 0;
+}
+
+
+
+/* MIDDELMATIG SCHERMEN*/
+@media only screen and (min-width: 900px) {
+
+    main>h1 {
+        font-size: 2.6rem;
+        padding: 60px 0;
+    }
+
+    nav {
+        margin-bottom: 100px;
+    }
+
+    nav>ul {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        max-width: 65vw;
+    }
+
+    main {
+        padding: 0 75px;
+        max-width: 50vw;
+    }
+
+    #knoppen {
+        padding: 60px 0 35px 0;
+    }
+
+    footer {
+        margin-top: 100px;
+    }
+
+  }
+
+
+
+/* GROTE SCHERMEN*/
+@media only screen and (min-width: 1400px) {
+
+    main>h1 {
+        font-size: 3rem;
+        padding: 75px;
+    }
+
+    main {
+        padding: 0 75px;
+    }
+
+    #knoppen {
+        padding: 75px 0 45px 0;
+    }
+
+    footer {
+        padding-top: 75px;
+    }
+}

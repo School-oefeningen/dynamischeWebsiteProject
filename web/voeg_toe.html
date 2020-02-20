@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Takenlijst - Voeg taak toe</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Homepagina</a></li>
+                <li><a href="#">Voeg taak toe</a></li>
+                <li><a href="overzicht.html">Overzicht takenlijst</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Takenlijst - Voeg taak toe</h1>
+
+        <article>
+            <form action="#" novalidate>
+                <p>
+                    <label for="taak">Beschrijving taak: </label>
+                    <input type="text" id="taak" name="taak" placeholder="Beschrijving taak">
+                </p>
+                <p>
+                    <label for="deadlineTaak">Deadline taak: </label>
+                    <input type="date" id="deadlineTaak" name="deadlineTaak" placeholder="Deadline taak">    
+                </p>
+                <p>
+                    <label for="priotiteit">Priotiteit (optioneel): </label>
+                    <input type="number" id="priotiteit" name="priotiteit" min="1" max="10" placeholder="Priotiteit taak">    
+                </p>
+                <p>
+                    <input type="submit" value="Voeg taak toe" id="taakSubmit" class="voeg_toe">
+                </p>
+            </form>
+        </article>
+    
+        <div id="knoppen">
+            <a href="index.html">Annuleer</a>
+        </div>
+    </main>
+    
+    <footer>
+        <address>© 2020 Lorenzo Catalano. All rights reserved.</address>
+    </footer>
+</body>
+</html>

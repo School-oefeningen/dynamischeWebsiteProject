@@ -1,6 +1,6 @@
+<%@ page import="model.db.TakenDB" %>
 <%@ page import="model.domain.Taak" %>
-<%@ page import="java.time.LocalDate" %>
-<%@ page import="model.db.TakenDB" %><%--
+<%@ page import="java.time.LocalDate" %><%--
   Created by IntelliJ IDEA.
   User: Lorenzo
   Date: 22/02/2020

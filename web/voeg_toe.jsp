@@ -29,18 +29,18 @@
     <h1>Takenlijst - Voeg taak toe</h1>
 
     <article>
-        <form action="#" novalidate>
+        <form action="voegTaakToeFormServlet" method="post">
             <p>
-                <label for="taak">Beschrijving taak: </label>
-                <input type="text" id="taak" name="taak" placeholder="Beschrijving taak">
+                <label for="beschrijvingTaak">Beschrijving taak: </label>
+                <input type="text" id="beschrijvingTaak" name="beschrijvingTaak" placeholder="Beschrijving taak">
             </p>
             <p>
                 <label for="deadlineTaak">Deadline taak: </label>
                 <input type="date" id="deadlineTaak" name="deadlineTaak" placeholder="Deadline taak">
             </p>
             <p>
-                <label for="priotiteit">Priotiteit (optioneel): </label>
-                <input type="number" id="priotiteit" name="priotiteit" min="1" max="10" placeholder="Priotiteit taak">
+                <label for="prioriteit">Prioriteit (optioneel): </label>
+                <input type="number" id="prioriteit" name="prioriteit" min="1" max="10" placeholder="Prioriteit taak">
             </p>
             <p>
                 <input type="submit" value="Voeg taak toe" id="taakSubmit" class="voeg_toe">
